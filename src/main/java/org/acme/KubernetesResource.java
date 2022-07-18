@@ -28,7 +28,6 @@ public class KubernetesResource {
     @GET
     @Path("/{namespace}/pods")
     @Produces(MediaType.APPLICATION_JSON)
-    @Blocking
     public List<Pod> pods(String namespace) {
         return k8sClient.pods(namespace);
     }
@@ -36,7 +35,6 @@ public class KubernetesResource {
     @GET
     @Path("/namespaces")
     @Produces(MediaType.APPLICATION_JSON)
-    @Blocking
     public List<Namespace> namespaces() {
         return k8sClient.namespaces();
     }
