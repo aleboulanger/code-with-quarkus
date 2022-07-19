@@ -1,9 +1,8 @@
-package org.acme;
+package org.talend.processing;
 
 import io.quarkus.test.junit.QuarkusIntegrationTest;
 
 @QuarkusIntegrationTest
-public class KubernetesResourceIT extends KubernetesResourceTest {
-
+class PipelineLauncherControllerIT extends PipelineLauncherControllerTest {
     // Execute the same tests but in native mode.
 }
